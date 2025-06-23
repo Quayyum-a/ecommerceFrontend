@@ -65,3 +65,4 @@ export default FeaturedProducts;
 // atomic commit 25
 // atomic commit 26
 // atomic commit 27
+// atomic commit 28
