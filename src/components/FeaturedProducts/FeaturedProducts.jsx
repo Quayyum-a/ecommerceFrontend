@@ -59,3 +59,4 @@ const FeaturedProducts = ({ type }) => {
 };
 
 export default FeaturedProducts;
+// atomic commit 22
