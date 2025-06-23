@@ -1,7 +1,38 @@
 .app {
-
+    min-height: 100vh;
+    background: var(--dark-bg);
+    color: var(--text-light);
+    
     .links {
         color: inherit;
         text-decoration: none;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    // Add some global animations
+    * {
+        transition: all 0.3s ease;
+    }
+    
+    // Custom scrollbar
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: var(--card-bg);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary-gradient);
+        border-radius: 4px;
+        
+        &:hover {
+            background: var(--secondary-gradient);
+        }
     }
 }
