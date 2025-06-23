@@ -5,7 +5,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
-import './Navbar.scss'
+import "./Navbar.scss";
 
 const NavBar = () => {
   return (
@@ -21,38 +21,55 @@ const NavBar = () => {
             <KeyboardArrowDownIcon />
           </div>
           <div className="item">
-            <Link className='links' to="/products/1">Women</Link>
+            <Link className="links" to="/products/1">
+              Electronics
+            </Link>
           </div>
           <div className="item">
-            <Link className='links' to="/products/2">Men</Link>
+            <Link className="links" to="/products/2">
+              Fashion
+            </Link>
           </div>
           <div className="item">
-            <Link className='links' to="/products/3">Children</Link>
+            <Link className="links" to="/products/3">
+              Home & Garden
+            </Link>
           </div>
         </div>
         <div className="center">
-          <Link className='links' to="/">NEYORAND</Link>
+          <Link className="links" to="/">
+            <span className="brand-text">VIBE</span>
+            <span className="brand-accent">MART</span>
+          </Link>
         </div>
         <div className="right">
           <div className="item">
-            <Link className='links' to="/">Homepage</Link>
+            <Link className="links" to="/">
+              Homepage
+            </Link>
           </div>
           <div className="item">
-            <Link className='links' to="/">About</Link>
+            <Link className="links" to="/">
+              About
+            </Link>
           </div>
           <div className="item">
-            <Link className='links' to="/">Contact</Link>
+            <Link className="links" to="/">
+              Contact
+            </Link>
           </div>
           <div className="item">
-            <Link className='links' to="/">Stores</Link>
+            <Link className="links" to="/">
+              Stores
+            </Link>
           </div>
           <div className="icons">
             <SearchIcon />
             <PersonOutlineOutlinedIcon />
             <FavoriteBorderOutlinedIcon />
             <div className="cartIcon">
-                <ShoppingCartOutlinedIcon />
-                <span>0</span>
+              <ShoppingCartOutlinedIcon />
+              <span>0</span>
             </div>
           </div>
         </div>
