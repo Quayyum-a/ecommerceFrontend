@@ -1,55 +1,149 @@
 .navbar {
-    height: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  border-bottom: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
 
-    .wrapper {
-        padding: 10px 30px;
-        display: flex;
-        justify-content: space-between;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: -1;
+    margin: -2px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      text-shadow: 0 0 10px var(--neon-blue);
     }
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 
     .item {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
+      color: var(--text-light);
+
+      &:hover {
+        color: var(--neon-blue);
+      }
+    }
+  }
+
+  .center {
+    font-size: 32px;
+    font-weight: 900;
+    font-family: "Orbitron", monospace;
+    letter-spacing: 3px;
+    position: relative;
+
+    .brand-text {
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
     }
 
-    .left {
-        display: flex;
-        align-items: center;
-        gap: 25px;
+    .brand-accent {
+      background: var(--secondary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 0 20px rgba(240, 147, 251, 0.5);
     }
-    .center{
-        font-size: 30px;
-        letter-spacing: 2px;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
     }
-    .right{
-        display: flex;
-        align-items: center;
-        gap: 25px;
+  }
 
-        .icons{
-            display: flex;
-            gap: 15px;
-            color: #777;
-            cursor: pointer;
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 
-            .cartIcon{
-                position: relative;
-                span{
-                    font-size: 12px;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    background-color: #2879fe;
-                    color: #fff;
-                    position: absolute;
-                    right: -10px;
-                    top: -10px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
+    .item {
+      color: var(--text-light);
+
+      &:hover {
+        color: var(--neon-pink);
+      }
+    }
+
+    .icons {
+      display: flex;
+      gap: 20px;
+      color: var(--text-muted);
+      cursor: pointer;
+
+      svg {
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: var(--neon-blue);
+          transform: scale(1.2);
+          filter: drop-shadow(0 0 10px var(--neon-blue));
         }
+      }
+
+      .cartIcon {
+        position: relative;
+
+        span {
+          font-size: 12px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: var(--accent-gradient);
+          color: var(--text-light);
+          position: absolute;
+          right: -10px;
+          top: -10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          box-shadow: 0 0 15px rgba(79, 172, 254, 0.6);
+          animation: pulse 2s infinite;
+        }
+      }
     }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 15px rgba(79, 172, 254, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(79, 172, 254, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(79, 172, 254, 0.6);
+  }
 }
