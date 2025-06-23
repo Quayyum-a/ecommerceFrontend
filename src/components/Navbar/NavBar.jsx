@@ -92,3 +92,4 @@ export default NavBar;
 // atomic commit 4
 // atomic commit 5
 // atomic commit 6
+// atomic commit 7
