@@ -1,5 +1,5 @@
 import React from "react";
-import './Footer.scss'
+import "./Footer.scss";
 
 const Footer = () => {
   return (
@@ -7,11 +7,11 @@ const Footer = () => {
       <div className="top">
         <div className="item">
           <h1>Categories</h1>
-          <span>Women</span>
-          <span>Men</span>
-          <span>Shoes</span>
-          <span>Accessories</span>
-          <span>New Arrivals</span>
+          <span>Electronics</span>
+          <span>Fashion</span>
+          <span>Home & Garden</span>
+          <span>Sports & Fitness</span>
+          <span>Gaming</span>
         </div>
         <div className="item">
           <h1>Links</h1>
@@ -24,22 +24,30 @@ const Footer = () => {
         <div className="item">
           <h1>About</h1>
           <span>
-            Lorem ipsum dolor, sit ametconsecteturadipisicing elit. Quibusdam
-            soluta iusto alias omnis aliquam, commodi ullam similique fuga
+            VIBE MART is your ultimate destination for all your shopping needs.
+            From cutting-edge electronics to trendy fashion, home essentials to
+            fitness gear - we bring you quality products with exceptional
+            service and competitive prices.
           </span>
         </div>
         <div className="item">
           <h1>Contact</h1>
           <span>
-            Lorem ipsum dolor, sit ametconsecteturdipisicing elit. Quibusdam
-            soluta iusto alias omnis aliquam, commodi ullam similique fuga
+            Get in touch with our team for any questions or support. We're here
+            to help you find the perfect products and make your shopping
+            experience amazing.
           </span>
         </div>
       </div>
       <div className="buttom">
         <div className="left">
-          <span className="logo">Neyorand</span>
-          <span className="copyright">&#169; Copyright 2023. All Rights Reserved</span>
+          <span className="logo">
+            <span className="brand-text">VIBE</span>
+            <span className="brand-accent">MART</span>
+          </span>
+          <span className="copyright">
+            &#169; Copyright 2024. All Rights Reserved
+          </span>
         </div>
         <div className="right">
           <img src="/img/payment.png" alt="" />
